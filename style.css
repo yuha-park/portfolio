@@ -226,22 +226,7 @@ p {
   transform: rotate(-30deg) scale(1.1);
 }
 
-.about__jobs {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 5px;
-  width: 100%;
-  margin-top: 50px;
-  grid-template-columns: repeat(2 , 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  place-content: center center;
-  place-items: center center;
-}
 
-.about__jobs div:nth-of-type(5) {
-  grid-column: 1 / span 2;
-  grid-row: 3 / span 1;
-}
 
 
 .major__title,
