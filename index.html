@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuha's Portfolio</title>
+  <meta 
+  name='description'
+  content='Portfolio for Yuha'
+  >
+  <meta name='author' content='Yuha'>
+  <link rel="icon" type='image/png' href="imgs/favicon.png">
+  <script src="https://kit.fontawesome.com/e389a78d34.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src='main.js' defer></script>
+</head>
+<body>
+  <!-- navabar -->
+  <nav id='navbar'>
+    <div class="navbar__logo">
+        <img 
+        src="imgs/nav/favicon.png" 
+        alt="favicon"
+        width='15px'
+        height='15px'
+        >
+      <a href="#">YUHA</a>
+    </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item" data-link='#home'>Home</li>
+        <li class="navbar__menu__item" data-link='#about'>About</li>
+        <li class="navbar__menu__item" data-link='#skills'>Skills</li>
+        <li class="navbar__menu__item" data-link='#work'>Work</li>
+        <li class="navbar__menu__item" data-link='#contact'>Contact</li>
+      </ul>
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+  </nav>
+  <!-- Home -->
+  <section id="home">
+    <div class="home__container">
+      <img 
+      src="imgs/profile/photo.jpg" 
+      alt="photo" 
+      class="home__avatar">
+      <h1 class="home__title">
+        Hello, <br />
+        I'm Yuha
+      </h1>
+      <h2 class="home__description">
+        Front-End Developer
+      </h2>
+      <button class="home__contact">Contact Me</button>
+    </div>
+    
+  </section>
+  <!-- about -->
+  <section id='about' class='section section__container'>
+    <h1>About Me</h1>
+    <p>
+      성신여자대학교 경영학과를 졸업하고, <br />
+      이젠컴퓨터아카데미에서 JAVA 웹개발 과정과 <br />
+      오라클자바교육학원에서 REACT / VUE 과정을 수료한 <br />
+      프론트엔드 개발자 지망생입니다
+    </p>
+    <div class="about__majors">
+      <div class="major">
+        <div class="major__icon">
+          <i class="fa-brands fa-js"></i>
+        </div>
+        <div class="major__title">Front-End</div>
+        <div class="major__description">
+          #HTML #css #JavaScript #React
+        </div>
+      </div>
+
+      <div class="major">
+        <div class="major__icon">
+          <i class="fa-brands fa-java"></i>
+        </div>
+        <div class="major__title">Back-End</div>
+        <div class="major__description">
+          #JAVA #srpingBoot
+        </div>
+      </div>
+
+      <div class="major">
+        <div class="major__icon">
+          <i class="fa-sharp fa-solid fa-bookmark"></i>
+        </div>
+        <div class="major__title">DB</div>
+        <div class="major__description">
+          #Oracle
+        </div>
+      </div>
+
+    </div>
+    <div class="about__majors">
+      <div class="about__jobs">
+        <div class="job">
+          <img 
+          src="imgs/profile/sungshin.png" 
+          alt="sungshin" 
+          class="job__logo"
+          width='30px'
+          height='30px'>
+          <div class="job__description">
+            <p class="job__name">성신여자대학교<br/>
+              현장실습운영팀</p> <span>근무</span>
+            <p class="job__period">2020.06 - 2021.05</p>
+          </div>         
+        </div>
+
+        <div class="job">
+          <i class="fa-sharp fa-solid fa-book-open"></i>
+          <div class="job__description">
+          <p class="job__name">이젠컴퓨터아카데미</p><span>수료</span>
+          <p class="job__period">2021.10 - 2022.03</p>
+          </div>
+        </div>
+
+        <div class="job">
+          <i class="fa-sharp fa-solid fa-book-open"></i>
+          <div class="job__description">
+          <p class="job__name">오라클자바교육학원</p><span>수료</span>
+          <p class="job__period">2022.08 - 2022.09</p>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- skills -->
+  <section id='skills' class='section'>
+    <div class="section__container">
+
+      <h1>Skills</h1>
+      <h2>Skills & Attributes</h2>
+      <p>
+        현재 JavaScript를 메인언어로, <br />
+        React.js를 공부해나가고 있습니다
+      </p>
+      <div class="skillset">
+        <div class="skillset__left">
+          <h3 class="skillset__title">Skills</h3>
+          <div class="skill">
+            <div class="skill__description">
+              <span>HTML</span>
+              <span>85%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value html"></div>
+            </div>
+          </div>
+  
+          <div class="skill">
+            <div class="skill__description">
+              <span>CSS</span>
+              <span>80%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value css"></div>
+            </div>
+          </div>
+  
+          <div class="skill">
+            <div class="skill__description">
+              <span>JavaScript</span>
+              <span>70%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value js"></div>
+            </div>
+          </div>
+  
+          <div class="skill">
+            <div class="skill__description">
+              <span>React</span>
+              <span>60%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value react"></div>
+            </div>
+          </div>
+  
+          <div class="skill">
+            <div class="skill__description">
+              <span>JAVA</span>
+              <span>55%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value java"></div>
+            </div>
+          </div>
+  
+          <div class="skill">
+            <div class="skill__description">
+              <span>SpringBoot</span>
+              <span>45%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value spring"></div>
+            </div>
+          </div>
+  
+        </div>
+        <div class="skillset__right">
+          <div class="tools">
+            <h3 class="skillset__title">Tools</h3>
+            <ul class="tools__list">
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Eclipse</span></li>
+            </ul>
+          </div>
+          <div class="etc">
+            <h3 class="skillset__title">Etc</h3>
+            <ul class="etc__list">
+              <li><span>Git</span></li>
+            </ul>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+
+    </div>
+  <!-- work -->
+  <section id="work" class='section'>
+    <div class="section__container">
+      <h1>My Work</h1>
+    <h3>Projects</h3>
+    <div class="work__categories">
+      <button class="category__btn selected" data-filter='*'>ALL
+        <span class="category__count">4</span>
+      </button>
+      <button class="category__btn" data-filter='front-end'>Front-End
+        <span class="category__count">3</span>
+      </button>
+      <button class="category__btn" data-filter='full-stack'>Full-stack
+        <span class="category__count">1</span>
+      </button>
+    </div>
+
+
+    <div class="work__projects">
+      <a 
+      href="https://github.com/blueneyes1/Genies_Lamp" 
+      class="project"
+      target='_blank'
+      data-type='full-stack'>
+      <img src="imgs/works/genie.png" alt="genie"  class='project__img'/>
+      <div class="project__description">
+        <h3>가상의 쇼핑몰 사이트</h3>
+        <span>#CSS #JavaScript #JAVA #srpingBoot #Oracle</span>
+      </div>
+      </a>
+
+      <a href="#" class="project"
+      data-type='front-end'
+      >
+      <img src="imgs/works/chrome.png" alt="js-chrome"  class='project__img'/>
+      <div class="project__description">
+        <h3>Vanila JavaScript로 만든 ToDoList</h3>
+        <span>#HTML #CSS #JavaScript</span>
+      </div>
+    </a>
+
+      <a 
+      href="https://yuha-park.github.io/react-todo/"
+      class="project"
+      target='_blank'
+      data-type='front-end'>
+      <img src="imgs/works/todo.png" alt="react-todo"  class='project__img'/>
+      <div class="project__description">
+        <h3>React.js로 만든 ToDoList</h3>
+        <span>#HTML #CSS #React.js</span>
+      </div>
+      </a>
+      
+      <a 
+      href="https://yuha-park.github.io/react-movie-app/" 
+      class="project"
+      target='_blank'
+      data-type='front-end'>
+      <img src="imgs/works/movie.png" alt="react-movie" class='project__img'/>
+      <div class="project__description">
+        <h3>React.js로 만든 Movie</h3>
+        <span>#HTML #CSS #React.js</span>
+      </div>
+    </a>
+    </div>
+    </div>
+    
+  </section>
+  <!-- contact -->
+  <section id="contact" class='section'>
+    <h1 class="contact__title">Contact Me</h1>
+    <h3 class="contact__email">miyunt@nate.com</h3>
+    <div class="contact__links">
+      <a href="https://github.com/yuha-park" target='_blank'>
+        <span>GITHUB</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Arrow -->
+  <button class='arrow-up'>
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+</body>
+</html>
