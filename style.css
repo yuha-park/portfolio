@@ -228,17 +228,19 @@ p {
 
 .about__jobs {
   display: grid;
+  grid-auto-flow: column;
+  gap: 5px;
   width: 100%;
   margin-top: 50px;
   grid-template-columns: repeat(2 , 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   place-content: center center;
   place-items: center center;
 }
 
-.about__jobs div:nth-of-type(1) {
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 2;
+.about__jobs div:nth-of-type(5) {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 1;
 }
 
 
@@ -377,7 +379,7 @@ p {
 
 .tools,
 .etc {
-  padding: 20px;
+  padding: 10px;
 }
 
 /* Work */
